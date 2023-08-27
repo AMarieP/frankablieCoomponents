@@ -8,12 +8,36 @@ import OutlineButton from './component/buttons/OutlineButton';
 import BackgroundButton from './component/buttons/BackgroundButton';
 import Banner from './component/landing/Banner';
 import ImageCard from './component/landing/ImageCard';
+import ProductCarousel from './component/landing/ProductCarousel';
 
 
 const productTest = {
   name: 'test',
-  imageUrl: testProdImage
+  imageUrl: testProdImage,
+  id: 1
 }
+const productTest2 = {
+  name: 'test',
+  imageUrl: testProdImage,
+  id: 2
+}
+const productTest3 = {
+  name: 'testing',
+  imageUrl: testProdImage,
+  id: 3
+}
+const productTest4 = {
+  name: 'test',
+  imageUrl: testProdImage,
+  id: 4
+}
+const productTest5 = {
+  name: 'test',
+  imageUrl: testProdImage,
+  id: 5
+}
+
+const listProdTest = [productTest, productTest2, productTest3, productTest4, productTest5]
 
 function App() {
   return (
@@ -25,7 +49,8 @@ function App() {
     <OutlineButton onClick={() => alert("You Clicked")} >outlinn</OutlineButton>
     <BackgroundButton onClick={() => alert("You Clicked")} >Bkgnrd</BackgroundButton>
     <Banner>This is the text in the banner</Banner>
-    <ImageCard product={productTest} />
+    {/* <ImageCard product={productTest} /> */}
+    <ProductCarousel products={listProdTest} />
 
     </>
   );
