@@ -1,0 +1,34 @@
+.bannerTransform {
+    width: 100vw;
+    /* animation properties */
+
+    
+    -moz-animation: scrollAnimation 17s linear infinite;
+    -webkit-animation: scrollAnimation 17s linear infinite;
+    animation: scrollAnimation 17s linear infinite;
+  }
+  
+  /* for Firefox */
+@-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+@-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+
+@keyframes scrollAnimation {
+    from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+      }
+      to {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+      }
+}
