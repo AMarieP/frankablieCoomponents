@@ -11,6 +11,7 @@ import ImageCard from './component/landing/ImageCard';
 import ProductCarousel from './component/landing/ProductCarousel';
 import Footer from './component/misc/Footer';
 import ProductCard from './component/prodpage/ProductCard';
+import ImageTextTile from './component/landing/ImageTextTile';
 
 const productTest = {
   name: 'test',
@@ -53,6 +54,7 @@ function App() {
     {/* <ImageCard product={productTest} /> */}
     <ProductCarousel products={listProdTest} />
     <ProductCard product={productTest}/>
+    <ImageTextTile image={pfpplaceholder} />
     <Footer />
 
     </>

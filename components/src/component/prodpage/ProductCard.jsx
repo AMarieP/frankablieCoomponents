@@ -23,7 +23,7 @@ const styles = {
         flexDirection: 'column',
         alignItems: 'center',
         padding: '0.5rem',
-        boxShadow: '3px 3px lightgrey',
+        boxShadow: '3px 3px 3px lightgrey',
 
 
     },
