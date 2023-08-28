@@ -10,7 +10,7 @@ import Banner from './component/landing/Banner';
 import ImageCard from './component/landing/ImageCard';
 import ProductCarousel from './component/landing/ProductCarousel';
 import Footer from './component/misc/Footer';
-
+import ProductCard from './component/prodpage/ProductCard';
 
 const productTest = {
   name: 'test',
@@ -52,6 +52,7 @@ function App() {
     <Banner>This is the text in the banner</Banner>
     {/* <ImageCard product={productTest} /> */}
     <ProductCarousel products={listProdTest} />
+    <ProductCard product={productTest}/>
     <Footer />
 
     </>

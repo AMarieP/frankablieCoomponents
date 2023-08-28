@@ -16,3 +16,9 @@ h3{
 p{
   font-family: 'Ovo', serif;
 }
+
+.capitalOpensans{
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+
+}
