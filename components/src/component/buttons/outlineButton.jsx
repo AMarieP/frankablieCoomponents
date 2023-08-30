@@ -5,7 +5,7 @@ export default function OutlineButton({onClick, children}) {
 
   return (
     <button style={styles.button} onClick={onClick}>
-        {children}
+        <p className='capitalOpensans'>{children}</p>
     </button>
   )
 }
@@ -14,9 +14,12 @@ export default function OutlineButton({onClick, children}) {
 const styles = {
     button:{
         backgroundColor: 'inherit',
-        color: colours.green,
-        border: '0.1rem solid',
-        padding: '0.9rem 1.9rem',
-        fontFamily: 'Open Sans',
+        colour: colours.green,
+        borderColor: colours.yellow,
+        borderWidth: '0.1rem',
+        borderStyle: 'solid',
+        padding: '0.3rem 1.9rem',
+        boxShadow: '0px 2px 3px lightgrey',
+
     }
 }

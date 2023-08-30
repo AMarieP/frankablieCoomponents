@@ -6,7 +6,7 @@ export default function BackgroundButton({onClick, children}) {
 
   return (
     <button style={styles.button} onClick={onClick}>
-        {children}
+        <p className='capitalOpensans'>{children}</p>
     </button>
   )
 }
@@ -14,10 +14,11 @@ export default function BackgroundButton({onClick, children}) {
 
 const styles = {
     button:{
-        backgroundColor: colours.lightGreen,
-        color: 'white',
-        padding: '1rem 2rem',
-        fontFamily: 'Open Sans',
+        backgroundColor: colours.khaki,
+        color: colours.lightYellow,
+        padding: '0.4rem 2rem',
         border: 'none',
+        boxShadow: '0px 2px 3px lightgrey',
+
     }
 }
