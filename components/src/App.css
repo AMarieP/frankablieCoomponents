@@ -3,10 +3,12 @@
 
 h1{
   font-family: 'Abril Fatface', cursive;
+  font-weight: 300;
 }
 
 h2{
   font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 
 h3{
@@ -20,5 +22,12 @@ p{
 .capitalOpensans{
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
+
+}
+
+a{
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 300;
+  text-decoration: none;
 
 }
