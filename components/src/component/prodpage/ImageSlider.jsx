@@ -3,7 +3,6 @@ import {React, useState} from 'react'
 export default function ImageSlider({images}) {
 
     const [activeImage, imageIsActive] = useState(images[0])
-    const [style, isStyle] = useState()
     
     function UpdateActive(selection){
         imageIsActive(selection)
@@ -12,7 +11,7 @@ export default function ImageSlider({images}) {
     }
 
     const thumbnail = images.map((image) => <div onClick={() => UpdateActive(image)}>
-                                            <img style={styles.thumbnail} src={image.imageUrl} />
+                                            <img style={activeImage == image ? styles.thumbnailActive : styles.thumbnail} src={image.imageUrl} />
                                         </div>)
     
   return (
@@ -62,6 +61,14 @@ const styles = {
         width: '5rem',
         overflow: 'hidden',
         objectFit: 'cover',
+
+    },
+    thumbnailActive: {
+        height: '100%',
+        width: '5rem',
+        overflow: 'hidden',
+        objectFit: 'cover',
+        filter: 'hue-rotate(90deg)'
 
     },
 
