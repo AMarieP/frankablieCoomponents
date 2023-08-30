@@ -24,8 +24,8 @@ const styles = {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        width: '10rem',
-        height: '10rem',
+        width: '20rem',
+        height: '20rem',
         margin: '0.5rem',
     },
     image: {
