@@ -11,7 +11,6 @@ export default function Footer() {
             </div>
             <div style={styles.navContainer}>
                 <div>
-                    <h3>See More</h3>
                     <p>home</p>
                     <p>about</p>
                     <p>shop</p>
@@ -49,6 +48,7 @@ const styles = {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-around',
+        padding: '1rem'
 
     },
     navContainer: {
@@ -56,7 +56,10 @@ const styles = {
         flexDirection: 'row',
         alignItems: 'center',
         flex: '2',
-        paddingLeft: '3rem'
+        paddingLeft: '3rem',
+        marginLeft: '1rem',
+        borderLeft: '1px solid black',
+        justifyContent: 'space-between',
 
     },
 
