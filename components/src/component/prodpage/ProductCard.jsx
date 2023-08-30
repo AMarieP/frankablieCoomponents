@@ -16,6 +16,7 @@ const styles = {
     container:{
         height: '20rem',
         width: '11rem',
+        backgroundColor: 'white',
         borderStyle: 'solid',
         borderColor: 'black',
         borderWidth: '1px',
