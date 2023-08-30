@@ -5,50 +5,67 @@ import ProductCarousel from '../component/landing/ProductCarousel'
 import ProductCarouselProdCard from '../component/prodpage/ProductCarouselProdCard'
 import listProdTest from '../testObj/products'
 import ImageTextTile from '../component/landing/ImageTextTile'
-import ProductCard from '../component/prodpage/ProductCard'
-
+import OutlineButton from '../component/buttons/OutlineButton'
+import BackgroundButton from '../component/buttons/BackgroundButton'
 import placeholder from '../images/pfp_placeholder.jpg'
 
 export default function Landing() {
   return (
     <>
-    <div style={styles.heroImage}>
-        <h1>Designed and Made in New Zealand</h1>
-        <h2 className='capitalOpensans'>see all</h2>
-        <ProductCarousel products={listProdTest}/>
+    <div style={styles.container}>
+        <div style={styles.heroImage}>
 
+
+        </div>
+        <div style={styles.prodCarouselShopAll}>
+            <div style={styles.prodCarouselShopAllHead}>
+                <h1>Designed and Made in New Zealand</h1>
+            </div>
+            <ProductCarousel products={listProdTest}/>
+            <BackgroundButton>Click to shop</BackgroundButton>
+
+
+        </div>
+        <Banner>Made and Designed in New Zealand</Banner>
+        <div style={styles.imageTiles}>
+            <ImageTextTile image={placeholder} />
+            <ImageTextTile image={placeholder} />
+            <ImageTextTile image={placeholder} />
+
+
+        </div>
+        <div style={styles.totesCarousel}>
+            <h2 className='capitalOpensans'>Browse Totes</h2>
+            <ProductCarouselProdCard products={listProdTest}/>
+            {/* <ProductCard product={listProdTest[1]} /> */}
+
+        </div>
+        <div style={styles.instagramDiv}>
+
+        </div>
     </div>
-    <div style={styles.prodCarouselShopAll}>
-
-    </div>
-    <Banner>Made and Designed in New Zealand</Banner>
-    <div style={styles.imageTiles}>
-        <ImageTextTile image={placeholder} />
-        <ImageTextTile image={placeholder} />
-        <ImageTextTile image={placeholder} />
-
-
-    </div>
-    <div style={styles.totesCarousel}>
-        <h2 className='capitalOpensans'>Browse Totes</h2>
-        <ProductCarouselProdCard products={listProdTest}/>
-        {/* <ProductCard product={listProdTest[1]} /> */}
-
-    </div>
-    <div style={styles.instagramDiv}>
-
-    </div>
-
     </>
   )
 }
 
 const styles = {
+    container: {
+        display: 'flex',
+        flexFlow: 'column nowrap',
+        gap: '1rem'
+    },
     heroImage: {
-        textAlign: 'center',
+        height: '90vh',
+        backgroundColor: colours.lightYellow
 
     },
     prodCarouselShopAll:{
+        textAlign: 'center',
+        textTransform: 'uppercase',
+        marginBottom: '30px' 
+    },
+    prodCarouselShopAllHead:{
+        padding: '10px',
 
     },
     imageTiles: {
@@ -60,6 +77,11 @@ const styles = {
 
     },
     totesCarousel: {
+        overflow: 'hidden',
+        padding: '2rem 0',
+        backgroundColor: colours.yellow,
+        textAlign: 'center',
+        boxShadow: '3px 3px 3px lightgrey',
 
 
     },
