@@ -14,8 +14,8 @@ export default function ProductCard({product}) {
 
 const styles = {
     container:{
-        height: '20rem',
-        width: '11rem',
+        height: '40vh',
+        width: '40vw',
         backgroundColor: 'white',
         borderStyle: 'solid',
         borderColor: 'black',
@@ -31,8 +31,12 @@ const styles = {
     image: {
         objectFit: 'cover',
         overflow: 'hidden',
-        width: '11rem',
+        width: '40vw',
         flex: '5',
+        borderStyle: 'solid',
+        borderColor: 'black',
+        borderWidth: '1px',
+
     },
     prodDetailContainer: {
         flex: '1',
