@@ -29,7 +29,8 @@ const styles = {
     },
     image: {
         objectFit: 'cover',
-        width: '100%',
+        overflow: 'hidden',
+        width: '11rem',
         flex: '5',
     },
     prodDetailContainer: {
