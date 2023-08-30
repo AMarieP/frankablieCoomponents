@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function profileImage({image}) {
+export default function ProfileImage({image}) {
 
   return (
     <div className='main' style={styles.main}>
@@ -18,5 +18,6 @@ const styles = {
     borderTopRightRadius: '50%',
     border: '0.1rem solid #354622',
     objectFit: 'cover',
+    width: '100%',
   },
 }
