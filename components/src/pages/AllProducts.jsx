@@ -11,11 +11,15 @@ export default function AllProducts() {
   return (
     <div style={styles.container}>
         <div style={styles.backgroundShape}>
-            <div style={styles.heading}>
-                <h1>Shop</h1>
-            </div>
-            <div style={styles.productList}>
-                {productList}
+            <div style={styles.contentContainer}>
+                <div style={styles.heading}>
+                    <p>sitemap {'>'} products {'>'} all</p>{/* will have sitemap component here  */}
+                    <h1>shop</h1>
+                    <p>sort by:</p> {/* will have sorting component here  */}
+                </div>
+                <div style={styles.productList}>
+                    {productList}
+                </div>
             </div>
         </div>
 
@@ -31,18 +35,31 @@ const styles = {
         height: 'fit-content',
         backgroundColor: colours.yellow,
         borderTopRightRadius: '100px', 
+
     },
     container: {
         height: '100%',
-        backgroundColor: colours.lightYellow
+        width: '100%',
+        backgroundColor: colours.lightYellow,
+    },
+    contentContainer: {
+        height: '100%',
+        width: '100vw',
 
     },
     heading: {
+        margin: '0px 15px',
+        textAlign: 'left',
+
 
     },
     productList: {
         display: 'grid',
-        gridTemplateAreas: 'a b b a'
+        gridTemplateColumns: 'auto auto',
+        justifyContent: 'center',
+        rowGap: '10px',
+        columnGap: '10px',
+        width: '100vw',
     },
 
 }
