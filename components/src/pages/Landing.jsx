@@ -12,12 +12,12 @@ import placeholder from '../images/pfp_placeholder.jpg'
 export default function Landing() {
   return (
     <>
-    <div style={styles.container}>
-        <div style={styles.heroImage}>
+    <main style={styles.container}>
+        <header style={styles.heroImage}>
 
 
-        </div>
-        <div style={styles.prodCarouselShopAll}>
+        </header>
+        <section style={styles.prodCarouselShopAll}>
             <div style={styles.prodCarouselShopAllHead}>
                 <h1>Designed and Made in New Zealand</h1>
             </div>
@@ -25,25 +25,25 @@ export default function Landing() {
             <BackgroundButton>Click to shop</BackgroundButton>
 
 
-        </div>
+        </section>
         <Banner>Made and Designed in New Zealand</Banner>
-        <div style={styles.imageTiles}>
+        <section style={styles.imageTiles}>
             <ImageTextTile image={placeholder} />
             <ImageTextTile image={placeholder} />
             <ImageTextTile image={placeholder} />
 
 
-        </div>
-        <div style={styles.totesCarousel}>
+        </section>
+        <section style={styles.totesCarousel}>
             <h2 className='capitalOpensans'>Browse Totes</h2>
             <ProductCarouselProdCard products={listProdTest}/>
             {/* <ProductCard product={listProdTest[1]} /> */}
 
-        </div>
-        <div style={styles.instagramDiv}>
+        </section>
+        <section style={styles.instagramDiv}>
 
-        </div>
-    </div>
+        </section>
+    </main>
     </>
   )
 }

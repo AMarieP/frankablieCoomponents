@@ -7,25 +7,25 @@ import placeholderPfp from '../images/pfp_placeholder.jpg'
 
 export default function About() {
   return (
-    <div style={styles.container}>
-        <div style={styles.profileContainer}>
+    <main style={styles.container}>
+        <header style={styles.profileContainer}>
             <div style={styles.profileImage}>
                 <ProfileImage image={placeholderPfp} />
             </div>
             <h1>Hello there! My name is Gina.</h1>
-        </div>
-        <div style={styles.textContainer}>
+        </header>
+        <section style={styles.textContainer}>
             <p>During my Bachelor of Textile Design, I found a love for illustration and surface pattern design. I created Frankalbie as a way to share my illustrations and surface pattern designs with the people around me.</p>
             <p>All of my designs start by hand and consist of hand-made marks, drawings, or watercolour, and are then finished using digital processes. The collections are limited and made in small batch runs, and are designed to produce minimal waste; anything leftover is always repurposed. Everything is designed and assembled by me, right here in New Zealand.</p>
-        </div>
-        <div style={styles.contactMeContainer}>
+        </section>
+        <section style={styles.contactMeContainer}>
             <h1>Contact Me: </h1>
             <a style={styles.emailLink} href='mailto:frankalbie@gmail.com'>frankalbie@gmail.com</a>
-        </div>
-        <div>
+        </section>
+        <section>
             <p>follow us on IG here</p>
-        </div>
-    </div>
+        </section>
+    </main>
   )
 }
 

@@ -9,21 +9,21 @@ export default function AllProducts() {
     const productList = listProdTest.map((product) => <ProductCard product={product} key={product.id} />)
 
   return (
-    <div style={styles.container}>
+    <main style={styles.container}>
         <div style={styles.backgroundShape}>
             <div style={styles.contentContainer}>
-                <div style={styles.heading}>
+                <header style={styles.heading}>
                     <p>sitemap {'>'} products {'>'} all</p>{/* will have sitemap component here  */}
                     <h1>shop</h1>
                     <p>sort by:</p> {/* will have sorting component here  */}
-                </div>
-                <div style={styles.productList}>
+                </header>
+                <section style={styles.productList}>
                     {productList}
-                </div>
+                </section>
             </div>
         </div>
 
-    </div>
+    </main>
   )
 }
 
